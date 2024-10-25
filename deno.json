@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "deno.ns",
+      "dom.iterable"
+    ],
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "types": [
+      "npm:@types/toastr",
+      "npm:@types/localforage",
+      "npm:@types/moment",
+      "./types/sillytavern_global.d.ts",
+      "./types/sillytavern_context.d.ts",
+      "./src/global.d.ts"
+    ]
+  },
+  "tasks": {
+    "sync:types": "deno run --allow-net --allow-env --allow-read --allow-write workspace-utils.ts sync:globalTypes",
+    "sync:importmap": "deno run --allow-env --allow-read --allow-write workspace-utils.ts sync:importMap",
+    "build": "deno run --allow-run --allow-net --allow-env --allow-read --allow-write workspace-utils.ts build",
+    "clear:cache": "deno cache --reload src/index.ts"
+  },
+  "importMap": "./import_map.json",
+  "extraImports": []
+}

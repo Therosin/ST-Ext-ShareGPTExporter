@@ -1,0 +1,11 @@
+{
+  "display_name": "SillyTavern ShareGPT Export",
+  "author": "therosin",
+  "version": "1.0.0",
+  "homePage": "https://github.com/Therosin/SillyTavern-Extensions",
+  "auto_update": false,
+  "loading_order": 5,
+  "js": "dist/extension.js",
+  "requires": [],
+  "optional": []
+}
