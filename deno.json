@@ -11,6 +11,8 @@
       "npm:@types/toastr",
       "npm:@types/localforage",
       "npm:@types/moment",
+      "npm:@types/react",
+      "npm:@types/react-dom",
       "./types/sillytavern_global.d.ts",
       "./types/sillytavern_context.d.ts",
       "./src/global.d.ts"
@@ -23,5 +25,6 @@
     "clear:cache": "deno cache --reload src/index.ts"
   },
   "importMap": "./import_map.json",
+  "nodeModulesDir": true,
   "extraImports": []
 }

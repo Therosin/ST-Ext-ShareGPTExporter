@@ -112,11 +112,7 @@ const buildProject = async (): Promise<void> => {
             format: 'esm',
             platform: 'browser',
             sourcemap: true,
-            external: [
-                'react',
-                'react-dom/client',
-                'react-dom'
-            ],
+            external: ['sillytavern/global', 'sillytavern/script'],
         });
 
         console.log("✅ Build succeeded.");
